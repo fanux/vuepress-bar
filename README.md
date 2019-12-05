@@ -24,9 +24,11 @@ module.exports = {
 
 **.vuepress/config.js**
 
+support pagesLink
+
 ```js
 const getConfig = require("vuepress-bar");
-const barConfig = getConfig(`${__dirName}/..`)
+const barConfig = getConfig("./",["/blog/","docs"])
 
 module.exports = {
   themeConfig: {
